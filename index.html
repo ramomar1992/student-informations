@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Informations</title>
+</head>
+
+<body>
+    <div class="background"></div>
+    <header>
+        <h1>ASAC</h1>
+        <nav>
+            <ul>
+                <li>HOME</li>
+                <li>ABOUT</li>
+                <li>CONTACT</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="form">
+
+            <form action="">
+                <fieldset required>
+                    <title for="email">Student Email</title>
+                    <input type="email" name="email" id="email" required>
+                </fieldset>
+                <fieldset required>
+                    <title for="phoneNum">Student Mobile Number</title>
+                    <input type="number" name="PhoneNum" id="phoneNum" required>
+                </fieldset>
+                <fieldset required>
+                    <title for="tuition">Tuition</title>
+                    <select name="tuition" id="tuition" required>
+                        <option value="100">100JD</option>
+                        <option value="500">500JD</option>
+                        <option value="1000">1000JD</option>
+                    </select>
+                </fieldset>
+                <input type="submit" value="Submit" id="submit">
+            </form>
+        </section>
+
+        <div class="table">
+
+            <table>
+
+                <tr>
+                    <th>id</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                    <th>Age</th>
+                    <th>Tuition</th>
+                </tr>
+
+                <tbody id="tableBody">
+
+                </tbody>
+            </table>
+            <h3 id="total">Total: </h3>
+        </div>
+    </main>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
